@@ -1,0 +1,30 @@
+body{
+    font-size: 22px;
+    font-family: sans-serif;
+    width: 700px;
+    margin: auto;
+
+    background-image: url(https://www.guiadasemana.com.br/contentFiles/image/opt_w1280h720/2018/08/FEA/38607_ilha-montao-do-trigo-sao-sebastiao-shutterstockk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left;
+}
+
+img{
+    width: 350px;
+}
+
+.html{
+    float: left;
+}
+
+.css{
+    float: right;
+}
+
+p{
+    line-height: 1,5;
+    text-align: justify;
+
+}

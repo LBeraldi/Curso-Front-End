@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Introdução</legend>
+            <label for="email">Email</label>
+            <input type="email" name="Email" required>
+            <label for="number">Numero</label>
+            <input type="number" name="number">
+            <label for="date">Data</label>
+            <input type="date" name="date" max="2024-12-31" min="2024-02-29">
+            <label><input type="radio" name="teste" value="s">Sim</label>
+            <label><input type="radio" name="teste" value="n">Não</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Parte 2</legend>
+            <label><input type="checkbox" name="interesse" value="html">HTML</label>
+            <label><input type="checkbox" name="interesse" value="java">JAVA</label>
+            <label><input type="checkbox" name="interesse" value="js">JavaScript</label>
+            <label><input type="checkbox" name="interesse" value="python">Python</label>
+        
+            <select name="linguagem" required>
+                <option value="">Selecione uma linguagem</option>
+                <optgroup label="FrontEnd">
+                <option value="html">HTML</option>
+                <option value="java">JAVA</option>
+                </optgroup>
+                <optgroup label="BackEnd">
+                    <option value="js">JavaScript</option>
+                    <option value="python">Python</option>
+                </optgroup></select>
+        </fieldset>
+    </form>
+</body>
+</html>

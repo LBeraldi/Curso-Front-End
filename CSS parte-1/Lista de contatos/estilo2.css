@@ -1,0 +1,71 @@
+html, body{
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(120deg, #385555, #558181);
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-title {
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 90%;
+    max-width: 960px;
+    list-style-type: none;
+}
+
+.list-iten{
+    flex-basis: 280px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px 2px rgb(133, 133, 133, .4);
+    background-image: url(imagens/thumb02.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.list-iten__image img{
+    border-radius: 50%;
+    width: 80px;
+    margin-top: 120px;
+}
+
+.list-iten__contato{
+    text-align: center;
+}
+
+.list-iten__contato p{
+    color: #4a7070;
+}
+
+.list-iten__contato h2{
+    margin: 0;
+}
+
+.list-iten__icones {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    background-color: #e8e8e8;
+}
