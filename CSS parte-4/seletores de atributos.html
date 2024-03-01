@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores de atributos</title>
+</head>
+<style>
+    a[title]{ /* Seleciona o atributo de uma tag */
+
+    }
+
+    a[alt=""]{ /* Seleciona o o valor declarado dentro de um atributo */
+
+    }
+
+    a[href^=abc]{ /* utilizar o ( ^ ) seleciona as primeiras letras do atributo selecionado */
+ 
+    }
+
+    a[href^=".png"]{ /* utilizar o ( $ ) seleciona as ultimas letras do atributo selecionado */
+ 
+    }
+
+    articla:not(a){/* Nega o valor dentro de parenteses, pode ser usado para tirar a estilização de uma tag classe ou atributo  */
+
+    }
+</style>
+<body>
+    <article>
+        <a alt="">Sem title</a>
+        <a title="">Sem title</a>
+        <a href="abc">Sem title</a>
+        <a src="abc.png"></a>
+    </article>
+</body>
+</html>
