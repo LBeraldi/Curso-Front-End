@@ -20,7 +20,7 @@ fieldset{
 }
 
 form{
-    width: 350px;
+    width: 25vw;
     background-color: #ececec;
     border-radius: 5px;
     box-shadow: 2px 2px 10px #333;
@@ -37,50 +37,55 @@ label{
     margin-bottom: .25em;
 }
 
-input{
+input, textarea{
     padding: .75em;
     border-radius: 5px;
     border: 1px solid #bbb;
+    border-bottom: 2px solid black;
     margin-bottom: 1.5em;
+    outline: 0;
+}
+
+/* input:invalid, textarea:invalid{
+    background-color: #ffb5b5;
 }
 
 input:valid{
-    border-bottom: 1px solid rgb(0, 167, 0);
+    background-color: #c5ffa3;
+} */
+
+input:invalid:focus, textarea:invalid:focus{
+    border-bottom: 2px solid #ff000d;
 }
 
-input:invalid{
-    border-bottom: #bb524e;
+input:valid:focus, textarea:valid:focus{
+    border-bottom: 2px solid #0ec72a;
+}
+
+input:focus, textarea:focus{
+    border-bottom: 2px solid #76bb4e;
+    background-color: #f0f5fa;
 }
 
 legend{
     font-weight: bold;
     padding: 2rem;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .btn{
+    padding: .7rem;
+    border-radius: 5px;
     width: fit-content;
     margin-left: auto;
     cursor: pointer;
-    background-color: #d1d1d1;
+    margin: 2rem;
+    background-color: #76bb4e;
     font-weight: bold;
 }
 
 .actions{
     display: flex;
     gap: 15px;
-}
-
-.btn2{
-    cursor: pointer;
-    background-color: #76bb4e;
-    font-weight: bold;
-    color: #fff;
-}
-
-.btn--apagar{
-    cursor: pointer;
-    background-color: #bb524e;
-    font-weight: bold;
-    color: #fff;
 }

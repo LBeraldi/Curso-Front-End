@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --color-geral: #6f7b7c;
+    --font-roboto: "Roboto", sans-serif;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-geral);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    padding: 1.5rem;
+    width: 25vw;
+    height: auto;
+    background-color: #fff;
+    border-left: 6px solid #535a5a;
+}
+
+legend{
+    text-align: left;
+    padding: 1.4rem 0;
+    font-family: var();
+    font-weight: 100;
+    font-size: 1.7rem;
+    color: #7b898a;
+    
+}
+
+.titulo{
+    margin-bottom: .3rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: var(--font-roboto);
+    font-weight: 200;
+    color: var(--color-geral);
+}
+
+.entrada{
+    padding: .7rem;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 1px solid #95a5a6;
+    margin-bottom: 1rem;
+    outline: none;
+    transition: padding-left .1s;
+}
+
+.entrada:focus{
+    outline: 2px solid var(--color-geral);
+    padding-left: 1rem;
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.btn{
+    color: #fff;
+    padding: .7rem;
+    border: none;
+    background-color: var(--color-geral);
+    border-radius: 2px;
+
+    font-family: var(--font-roboto);
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.btn-login{
+    color: #fff;
+    padding: .7rem 1.5rem;
+    border: none;
+    background-color: var(--color-geral);
+    border-radius: 2px;
+
+    font-family: var(--font-roboto);
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.botoes p{
+    font-size: .8rem;
+    font-family: var(--font-roboto);
+}
+
+.login{
+    align-items: center;
+}
+
+.cadastre-se{
+    text-decoration: none;
+    color: var(--color-geral);
+    font-family: var(--font-roboto);
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-left: -2rem;
+}
+
+.esqueci-senha{
+    font-size: .8rem;
+}
