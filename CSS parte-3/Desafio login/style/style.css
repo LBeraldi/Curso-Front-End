@@ -24,7 +24,7 @@ fieldset{
     flex-direction: column;
 }
 
-form{
+form{ 
     padding: 1.5rem;
     width: 25vw;
     height: auto;

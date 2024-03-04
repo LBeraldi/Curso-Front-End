@@ -1,0 +1,26 @@
+a:first-of-type::after{
+    content: url(imagens/newWindow-icon.png);
+    padding-left: 1rem;
+}
+
+a:last-of-type::before{
+    content: url(imagens/pdf-icon.gif);
+    padding-right: 1rem;
+}
+
+input[type="checkbox"]:not(:disabled) + label{
+    color: red;
+}
+
+input[type="checkbox"]:checked + label{
+    color: green;
+}
+
+input[type="checkbox"]:disabled + label{
+    color: blue;
+}
+
+li li:nth-child(3){
+    background-color: blue;
+    color: white;
+}
