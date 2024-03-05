@@ -69,6 +69,34 @@
         }
 
         /* Desafio checkbox pt3 */
+        .switch input{
+            display: none;
+        }
+
+        .switch span{
+            display: inline-block;
+            width: 2rem;
+            height: 1rem;
+            border-radius: 1em;
+            outline: 2px solid #cfd8dc
+        }
+
+        .switch span::after{
+            content: "";
+            display: block;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background-color: rgb(17, 0, 110);
+            transition: transform .3s;
+            transform: background-color 1s;
+            transform: translateX(0);
+        }
+
+        .switch input:checked+span::after{
+            transform: translateX(100%);
+            background-color: #f8d300;
+        }
 
         
     </style>
