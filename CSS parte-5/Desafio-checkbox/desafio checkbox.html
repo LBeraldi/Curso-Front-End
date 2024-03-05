@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .lbl1 {
+            display: none;
+        }
+
+        .lbl1+label span{
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background-color: red;
+        }
+
+        .lbl1:checked+label span{
+            background-color: blue;
+            position: relative;
+        }
+
+        .lbl1:checked+label span::before{
+            content: "";
+            display: block;
+            border: 2px solid rgb(255, 255, 255);
+            position: absolute;
+            top: 2px;
+            left: 10px;
+            right: 8px;
+            bottom: 8px;
+            transform: rotate(45deg);
+            border-top-color: transparent;
+            border-left-color: transparent;
+        }
+
+        /* Desafio checkbox pt2 */
+
+        .lbl2 input{
+            display: none;
+        }
+
+        .lbl2 span{
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background-color: red;
+        }
+
+        .lbl2 input[type="checkbox"]:checked + span{
+            background-color: blue;
+            position: relative;
+        }
+
+        .lbl2 input[type="checkbox"]:checked + span::before{
+            content: "";
+            display: block;
+            border: 2px solid rgb(255, 255, 255);
+            position: absolute;
+            top: 2px;
+            left: 10px;
+            right: 8px;
+            bottom: 8px;
+            transform: rotate(45deg);
+            border-top-color: transparent;
+            border-left-color: transparent;
+        }
+
+        /* Desafio checkbox pt3 */
+
+        
+    </style>
+</head>
+<body>
+    <h1>Checkbox</h1>
+
+    <input type="checkbox" id="html" class="lbl1">
+    <label for="html" > <span></span>HTML</label>
+
+    <input type="checkbox" id="css" class="lbl1">
+    <label for="css" > <span></span>CSS</label>
+
+    <input type="checkbox" id="js" class="lbl1">
+    <label for="js" > <span></span>JavaScript</label>
+
+    <hr>
+
+    <label class="lbl2">
+        <input type="checkbox"><span></span>HTLM
+    </label>
+
+    <label class="lbl2">
+        <input type="checkbox"><span></span>CSS
+    </label>
+    
+    <label class="lbl2">
+        <input type="checkbox"><span></span>JavaScript
+    </label>
+
+    <hr>
+
+    <label class="switch"><input type="checkbox"><span></span>HTML</label>
+
+    <label class="switch"><input type="checkbox"><span></span>CSS</label>
+    
+    <label class="switch"><input type="checkbox"><span></span>JavaScript</label>
+</body>
+</html>

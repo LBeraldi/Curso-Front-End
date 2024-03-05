@@ -12,7 +12,7 @@ input[type="checkbox"]:not(:disabled) + label{
     color: red;
 }
 
-input[type="checkbox"]:checked + label{
+input[type="checkbox"]:checked + label{ 
     color: green;
 }
 

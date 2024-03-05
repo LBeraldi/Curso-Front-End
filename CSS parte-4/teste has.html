@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        table{
+            border-collapse: collapse;
+            width:100%;
+            margin-bottom: 24px;
+        }
+
+        th,td{
+            border-bottom:1px solid #ddd ;
+            padding: .5rem;
+        }
+
+        th{
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+
+        tr:nth-child(even){
+            background-color: #f9f9f9;
+        }
+
+        tr:nth-child(odd){
+            background-color: white;
+        }
+
+        tr:hover{
+            background-color: #e9e9e9;
+        }
+
+        tr:has(input[type="checkbox"]:checked){
+            background-color: #6ce26c;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>nome</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Teste 1</td>
+                <td>12345</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Teste 2</td>
+                <td>54321</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Teste 3</td>
+                <td>21324</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Teste 4</td>
+                <td>21324</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Teste 5</td>
+                <td>21324</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
