@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/header-nav.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Lista</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="links">
+        <img src="imagens/perfil.png" alt=""> 
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tipografia.html">Tipografia</a></li>
+                <li><a href="cards.html">Cards</a></li>
+                <li><a href="lista.html">Lista</a></li>
+                <li><a href="formulario.html">Formulários</a></li>
+                <li><a href="botoes.html">Botões</a></li>
+                <li><a href="tabelas.html">Tabelas</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="content-container">
+        <section class="content-header">
+            <h1>My Component</h1>
+        </section>
+
+        <section class="tip-content destaque">
+            <h2>Listas</h2>
+            <p>Cards sao elementos usados para agrupar informações como imagens (Opicionais), titulo e descrição. Normalmente são links para outras páginas dentro da mesma aplicação ou site.</p>
+        </section>
+        
+        <section class="lista-container">
+            <div class="lista">
+                <div>
+                    <h3>Não Ordenada</h3>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Ordenada</h3>
+                    <ol>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Alternate</h3>
+                    <ul class="alternate">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="lista">
+                <div>
+                    <h3>Não Ordenada</h3>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <ul>
+                            <li>Item 2.1</li>
+                            <li>Item 2.2</li>
+                            <ul>
+                                <li>item 2.2.1</li>
+                                <li>item 2.2.2</li>
+                            </ul>
+                            <li>Item 2.3</li>
+                        </ul>
+                        <li>Item 3</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Ordenada</h3>
+                    <ol start="6" type="A">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <ol type="I" reversed>
+                            <li>Item 2.1</li>
+                            <li>Item 2.2</li>
+                            <ol type="a" start="10">
+                                <li>item 2.2.1</li>
+                                <li>item 2.2.2</li>
+                            </ol>
+                            <li>Item 2.3</li>
+                        </ol>
+                        <li>Item 3</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h3>Ambas</h3>
+                    <ol class="roman">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <ul class="emoji">
+                            <li>Item 2.1</li>
+                            <li>Item 2.2</li>
+                            <li>Item 2.3</li>
+                        </ul>
+                        <li>Item 3</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
