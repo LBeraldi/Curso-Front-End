@@ -28,6 +28,69 @@
         <section class="content-header">
             <h1>My Component</h1>
         </section>
+
+        <article class="contatos-container-form">
+            <section>
+                <h2 class="contato">Entre em contato</h2>
+                <form action="">
+                    <fieldset class="form-contatos">
+                       
+                        <div class="form-row">
+                            <div class="form-colum">
+                                <label for="nome">Nome:</label>
+                                <input type="text" id="nome" name="nome" required>
+                            </div>
+                            <div class="form-colum"> 
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+                        
+                        <input class="btn2" type="submit" value="Enviar">
+
+                    </fieldset>
+                </form>
+                <h2 class="contato">Quiz</h2>
+                <form action="">
+                    <fildset class="form2">
+
+                            <label for="linguagem">Qual é a sua linguagem favorita ?</label>
+                            <select id="linguagem" name="linguagem">
+                                <option value="Java">Java</option>
+                                <option value="javascript">JavaScript</option>
+                                <option value="typescript">TypeScript</option>
+                                <option value="phyton">Phyton</option>
+                            </select>
+
+                            <div class="prioridades">
+                                <label for="solteiro">Baixa prioridade</label>
+                                <input type="radio" id="solteiro" name="prioraidade" value="baixa prioridade">
+                            </div>
+                            <div class="prioridades">
+                                <label for="casado">Media prioridade</label>
+                                <input type="radio" id="casado" name="prioraidade" value="media prioridade">
+                            </div>
+                            <div class="prioridades">
+                                <label for="divorciado">Alta prioridade</label>
+                                <input type="radio" id="divorciado" name="prioraidade" value="alta prioridade">
+                            </div>
+                            <div class="actions-2">
+                                <input type="reset" value="Limpar" class="btn btn--apagar">
+                                <input type="submit" value="Enviar" class="btn">
+                            </div>
+                    </fildset>
+                </form>
+            </section>
+            <section>
+                <div class="endereco">
+                    <h2>Rua das Fiandeiras, 04545005, Vila Olímpia</h2>
+                    <h2>Telefone 000-000-000</h2>
+                    <h2>Email email@sserver.com</h2>
+                </div>
+            </section>
+        </article>
     </main>
 </body>
 </html>
