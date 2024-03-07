@@ -73,8 +73,12 @@ body{
     font-size: 3rem;
 }
 
-.redes:hover :not(:hover){
-    opacity: .8;
+.redes i{
+    transition: all .1s;
+}
+
+.redes a:hover > i{
+    transform: scale(1.1);
 }
 
 /* Tipografia */
