@@ -5,6 +5,7 @@
     --bg-colo:#414d61;
     --header-colo: #2e333d;
     --alt-color: #2b2e33;
+    --hover-table-color: #383d46;
     --font-color: #fff;
     --font-color-orange: #dd6b01;
 
@@ -60,10 +61,20 @@ body{
 }
 
 .content-info ul{
+    list-style-type: none;
     margin-top: 1.3rem;
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
+}
+
+.redes a{
+    text-decoration: none;
     color: var(--font-color) ;
+    font-size: 3rem;
+}
+
+.redes:hover :not(:hover){
+    opacity: .8;
 }
 
 /* Tipografia */
@@ -75,7 +86,6 @@ body{
 }
 
 .tip-content p{
-    margin-bottom: 3rem;
     color: var(--font-color);
 }
 
@@ -85,6 +95,7 @@ body{
 
 .tip-content{
     color: var(--font-color);
+    margin-bottom: 3rem;
 }
 
 .destaque{
@@ -265,4 +276,154 @@ label{
     color: var(--font-color);
     margin: 5rem;
     font-size: .8rem;
+}
+
+/* Botões */
+
+.botoes-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.botoes-container-in{
+    display: flex;
+    gap: 15rem;
+    flex: 1 0 0%;
+    margin-bottom: 2rem;
+}
+
+.div-botoes{
+    width: 31.25rem;
+}
+
+.div-botoes h3{
+    color: var(--font-color-orange);
+    font-size: 1.3rem;
+}
+
+.btn01{
+    background-color: var(--header-colo);
+    color: var(--font-color);
+    padding: .4rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn02{
+    background-color: var(--header-colo);
+    color: var(--font-color);
+    padding: .6rem;
+    border-radius: 4px;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.btn01:hover, .btn02:hover{
+    background-color: #2b2e33;
+}
+
+.btn03{
+    background-color: var(--bg-colo);
+    color: var(--font-color);
+    border: 1px solid var(--font-color-orange);
+    padding: .4rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn04{
+    background-color: var(--bg-colo);
+    color: var(--font-color);
+    border: 1px solid var(--font-color-orange);
+    padding: .6rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+.btn03:hover, .btn04:hover{
+    background-color: var(--header-colo);
+}
+
+.btn05{
+    background-color: var(--header-colo);
+    color: var(--font-color);
+    padding: .4rem 5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn06{
+    background-color: var(--header-colo);
+    color: var(--font-color);
+    padding: .6rem 5rem;
+    border-radius: 4px;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.btn05:hover, .btn06:hover{
+    background-color: #2b2e33;
+}
+
+.btn07{
+    background-color: var(--bg-colo);
+    color: var(--font-color);
+    border: 1px solid var(--font-color-orange);
+    padding: .4rem 5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn08{
+    background-color: var(--bg-colo);
+    color: var(--font-color);
+    border: 1px solid var(--font-color-orange);
+    padding: .6rem 4rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+.btn07:hover, .btn08:hover{
+    background-color: var(--header-colo);
+}
+
+/* Tabelas */
+
+
+table{
+    border-collapse: collapse;
+    width:100%;
+    margin-bottom: 24px;
+    color: var(--font-color);
+}
+
+th,td{
+    padding: .8rem;
+}
+
+table:not(.tabela-zebrada) td{
+    border-bottom:1px solid var(--alt-color) ;
+}
+
+table td:last-child,
+table th:last-child{
+    text-align: right;
+}
+
+tr:hover{
+    background-color: var(--hover-table-color);
+}
+
+.table-container{
+    margin-bottom: 8rem;
+}
+
+.tabela-zebrada tbody tr:nth-child(odd){
+    background-color: var(--header-colo);
+}
+
+.vertical td:not(:last-child){
+    border-right: 1px solid var(--alt-color);
 }
