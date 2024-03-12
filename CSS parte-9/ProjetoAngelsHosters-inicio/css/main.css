@@ -17,6 +17,7 @@ h1,h2,h3,h4{
 }
 
 .top-header{
+    display: flex;
     text-align: center;
 }
 
@@ -218,6 +219,10 @@ h1,h2,h3,h4{
     .colum-xl3{
         width: calc(25% - 2rem);
     }
+
+    .colum-xl6{
+        width: calc(50% - 2rem);
+    }
 }
 
 .mainContent{
@@ -237,5 +242,16 @@ h1,h2,h3,h4{
 }
 
 .mainContent .row{
-    gap: 3rem;
+    row-gap: 4rem;
+}
+
+.mainContent_img img{
+    width: 100%;
+}
+
+@media screen and (min-width: 42.5rem) {
+    .mainContent_article{
+        display: flex;
+        gap: 2rem;
+    }
 }
