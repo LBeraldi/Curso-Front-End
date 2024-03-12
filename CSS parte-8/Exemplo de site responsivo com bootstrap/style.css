@@ -1,0 +1,25 @@
+body{
+    width: 70vw;
+    margin: auto;
+    background-color: #3B4252;
+}
+
+section{
+    margin-top: 10rem;
+}
+
+.container img{
+    width: 100%;
+}
+
+.card-content{
+    background-color: #ECEFF4;
+}
+.card-content h1{
+    font-size: 1.5rem;
+    padding: .4rem;
+}
+
+.card-content p{
+    padding: .4rem;
+}
