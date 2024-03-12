@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: dimgray;
+}
+
+.cards-container{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.card{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-body{
+    padding: 1rem;
+    width: 40rem;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+.card-body a{
+    text-decoration: none;
+    padding: .5rem;
+    background-color: gray;
+    color: #fff;
+}
+
+@media screen and (min-width: 50em) {
+    .card{
+        flex-direction: row;
+    }
+}
