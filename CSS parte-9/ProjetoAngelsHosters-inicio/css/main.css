@@ -7,6 +7,10 @@ html{
     font-family: sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 h1,h2,h3,h4{
     font-family: "Oxygen", sans-serif;;
 }
@@ -18,6 +22,7 @@ h1,h2,h3,h4{
 
 .top-header{
     display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
@@ -32,7 +37,7 @@ h1,h2,h3,h4{
 .top_nav ul{
     list-style-type: none;
     padding: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .top_nav a {
@@ -49,6 +54,8 @@ h1,h2,h3,h4{
 @media screen and (min-width: 49rem){
     .top-header{
         display: flex;
+        flex-direction: row;
+        align-items: center;
         justify-content: space-between;
     }
 
@@ -226,7 +233,7 @@ h1,h2,h3,h4{
 }
 
 .mainContent{
-    padding: 2rem;
+    padding: 8rem 2rem;
 }
 
 .mainContent p {
@@ -254,4 +261,23 @@ h1,h2,h3,h4{
         display: flex;
         gap: 2rem;
     }
+}
+
+.footer{
+    background-color: #2E1E33;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 1.5rem;
+    color: white;
+}
+
+.footer h1{
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+.footer p{
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: normal;
 }
