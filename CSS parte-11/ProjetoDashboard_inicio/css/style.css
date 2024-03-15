@@ -13,8 +13,9 @@
 body{
     color: var(--color-text);
     display: grid;
-    grid-template-columns: 15rem 1fr;
-    grid-template-rows: 4rem auto;
+    grid-template-columns: max-content 1fr;
+    /* grid-template-rows: 4rem auto; */
+    grid-template-rows: 4rem minmax( calc(100vh - 4rem), auto);
     font-family: var(--default-font);
 }
 
@@ -31,6 +32,7 @@ img{
     max-height: 100vh;
     position: sticky;
     top: 0;
+    padding-right: var(--default-padding);
 }
 
 .topNav{
