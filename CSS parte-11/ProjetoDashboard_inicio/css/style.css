@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --default-font: "Poppins", sans-serif;
+    --color-butons: #004EDA;
+    --bg-color: #F2F2F8;
+    --default-padding: 2rem;
+    --midle-padding: calc(var(--default-padding) / 2) ;
+    --black: #111;
+    --color-text: #5a5a5f
+}
+
+body{
+    color: var(--color-text);
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+    grid-template-rows: 4rem auto;
+    font-family: var(--default-font);
+}
+
+img{
+    max-width: 100%;
+}
+
+.mainNav{
+    grid-row: 1 / -1;
+    grid-column: 1 / 2;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.topNav{
+    grid-row: 1 / 2;
+    grid-column: 2 / -1;
+    background-color: #ffffff;
+}
+
+main{
+    grid-row: 2 / -1;
+    grid-column: 2 / -1;
+    background-color: var(--bg-color);
+
+    display: grid;
+    gap: var(--default-padding);
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: min-content;
+
+    padding: var(--default-padding);
+}
+
+main > *{
+    grid-column: span 2;
+}
+
+main > .grid-half{
+    grid-column: span 1;
+}
+
+main > figure{
+    margin: 0;
+}
+
+.mainNav-logo{
+    padding-top: var(--default-padding);
+    padding-left: var(--default-padding);
+    display: inline-block;
+
+    color: var(--black);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+
+}
+
+.mainNav_menu, .topNav-menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: var(--default-padding);
+}
+
+.mainNav_menu li{
+    margin-bottom: 1rem;
+}
+
+
+.mainNav_menu a, .topNav-menu a{
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+
+.mainNav_menu svg, .topNav-menu svg{
+    vertical-align: bottom;
+}
+
+.mainNav_menus{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding-top: var(--default-padding);
+}
+
+.topNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topNav-menu{
+    display: flex;
+    align-items: center;
+    gap: var(--default-padding);
+}
+
+.perfil{
+    padding-right: var(--default-padding);
+}
+
+.perfil .nome{
+    font-weight: 600;
+    font-size: .8rem;
+    color: var(--black
+    );
+}
+
+.perfil .dev{
+    text-transform: uppercase;
+    padding-top: .2rem;
+    font-weight: 500;
+    font-size: .7rem;
+    color: color-mix(in srgb, var(--black), transparent 60%);
+}
+
+.summary{
+    background-color: white;
+    border-radius: 4px;
+    padding: var(--midle-padding) var(--default-padding);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.separate{
+    width: 2px;
+    background-color: var(--bg-color);
+    align-self: stretch;
+}
+
+.summary article {
+    padding: var(--midle-padding) 0;
+    display: flex;
+    gap: var(--default-padding);
+}
+
+.summary article .description{
+    font-size: 1.1rem;
+}
+
+.summary article .number{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-butons);
+    margin-left: var(--midle-padding);
+}
+
+.btn{
+    background-color: var(--color-butons);
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+}
