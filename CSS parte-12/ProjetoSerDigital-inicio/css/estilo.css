@@ -27,11 +27,13 @@ body {
 }
 
 .header-menu {
+    display: flex;
+    flex-direction: column;
     list-style-type: none;
     padding: 0;
     text-align: right;
 
-    display: none;
+    /* display: none; */
 }
 
 .heto_title{
@@ -41,11 +43,15 @@ body {
 .header-menu a {
     display: block;
     padding: 2em 0;
-
+    font-size: 1.8rem;
 }
 
 a {
     color: inherit;
+}
+
+p{
+    font-size: 1.4rem;
 }
 
 nav a {
@@ -57,17 +63,23 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .header {
     text-align: left;
 }
 
+.header img{
+    height: 2rem;
+}
+
+
 .btn {
     display: inline-block;
     text-decoration: none;
-    padding: 1em;
+    padding: 1.3em;
+    font-size: 1.4rem;
     background-color: var(--primary-color);
     border-radius: 5px;
     color: var(--light);
@@ -79,9 +91,12 @@ h2 {
 }
 
 img {
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 
+.brands{
+    text-align: center;
+}
 
 .brands h2 {
     font-size: 1rem;
@@ -119,6 +134,10 @@ img {
     container: testemunhoCard / inline-size;
 }
 
+.testemunhos_title{
+    text-align: center;
+}
+
 .testemunho_thumb {
     width: 8.2rem;
     height: 8.2rem;
@@ -137,6 +156,7 @@ img {
 
 .footer {
     background-color: var(--gray);
+    font-size: 1.3rem;
 }
 
 .footer ul {
@@ -152,12 +172,13 @@ img {
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
 .copyright {
     white-space: nowrap;
 }
+
 
 .hero,
 .brands,
@@ -195,13 +216,28 @@ img {
     /* align-items: ; */
     gap: 1.5rem;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-@container testemunhaCard(min-width:46rem){
-    
+
+.icons li{
+    display: inline-block;
+    font-size: 2rem;
+}
+
+.icons li + li{
+    margin-left: 1rem;
+}
+
+@container testemunhoCard (min-width: 42rem){
+    .testemunho_card{
+        flex-direction: row;
+        text-align: left;
+    }
 }
 
 /* Versão tablet */
-@media screen and (min-width: 46rem) {
+@media screen and (min-width: 50rem) {
     body{
         text-align: left;
     }
@@ -210,16 +246,24 @@ img {
     }
     
     h2 {
-        font-size: 2.8rem;
+        font-size: 4rem;
+    }
+    .hero_title{
+        font-size: 3rem;
+    }
+    .hero_title + p{
+        font-size: 1.3rem;
     }
     .header{
-        display: flex;
-        justify-content: space-between;
         align-items: center;
     }
+    .menu-btn, .menu-icon{
+        display: none;
+    }
     .header-menu{
-        display: block;
+        /* display: block; */
         margin: 0;
+        flex-direction: row;
     }
     .header-menu li{
         display: inline-block;
@@ -259,6 +303,13 @@ img {
 @media screen and (min-width: 90rem) {
     .hero_title{
         margin-bottom: 6.2rem;
+        font-size: 3rem;
+    }
+    .header p{
+        font-size: 1.5rem;
+    }
+    .hero_title{
+        font-size: 6rem;
     }
     .testemunho_card{
         display: flex;
@@ -294,5 +345,100 @@ img {
     }
     .row>.lg-8-12{
         grid-column: 8 / -1;
+    }
+}
+
+
+/* Hamburguer menu */
+
+.menu-icon{
+    position: relative;
+    cursor: pointer;
+    /* user-select: none; */
+    height: 24px;
+}
+
+.nav-icon{
+    background-color: #333;
+    display: inline-block;
+    height: 2px;
+    width: 24px;
+    position: relative;
+}
+
+.nav-icon::after, .nav-icon::before{
+    content: "";
+    background-color: #333;
+    display: inline-block;
+    height: 2px;
+    width: 24px;
+    position: absolute;
+    transition: transform .3s;
+
+}
+
+.nav-icon::after{
+    transform: translateY(8px);
+    transition: transform .3s;
+}
+
+.nav-icon::before{
+    transform: translateY(-8px);
+}
+
+.menu-btn:checked + .menu-icon .nav-icon::before{
+    transform: rotate(-45deg);
+}
+
+.menu-btn:checked + .menu-icon .nav-icon::after{
+    transform: rotate(45deg);
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.header-menu{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    max-height: 0;
+    overflow: hidden;
+    background-color: white;
+    transition: max-height .3s;
+    padding-right: 1rem;
+}
+
+.menu-btn:focus-visible + .menu-icon{
+    outline: 2px solid black;
+    outline-offset: 3px;
+}
+
+.menu-btn:checked+.menu-icon .nav-icon{
+    background-color: transparent;
+}
+
+.menu-btn:checked ~.header-menu{
+    max-height: 100vh;
+}
+
+.header-menu:focus-within{
+    max-height: 100vh;
+}
+
+@media screen and (min-width: 50rem) {
+    .header-menu{
+        position: static;
+        max-height: initial;
+        background-color: initial;
     }
 }
