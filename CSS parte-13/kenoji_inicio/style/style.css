@@ -1,1 +1,111 @@
-body {}
+body {
+    font-family: "Montserrat", sans-serif;
+    height: 50vw;
+    margin: auto;
+    background-image: linear-gradient(150deg, rgba(247, 239, 0, 0.185) 0%, rgb(255, 162, 0) 100%);
+    background-repeat: no-repeat;
+    /* background-position: static; */
+}
+
+header{
+    margin-top: 5vw;
+    margin-left: 15vh;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+section{
+    margin-top:6vh;
+    margin-left: 15vh;
+    max-width:45vw;
+}
+
+section h1{
+    font-size: 5rem;
+}
+section h1 strong{
+    color: #d60000;
+    text-transform: uppercase;
+}
+
+section p{
+    font-weight: lighter;
+}
+
+.upper{
+    text-transform: uppercase;
+}
+
+.entrada{
+    padding: 1rem;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid #28293e;
+}
+.entrada::placeholder{
+    color: #28293e;
+}
+
+.btn{
+    padding: 1rem;
+    border-radius: 5px;
+    border: 2px solid #28293e;
+    background-color: #2b4772;
+    color: white;
+}
+
+.animation{
+    position: relative;
+}
+
+.animation img{
+    position: absolute;
+}
+
+.animation img:nth-child(1){
+    top: 18rem;
+    left: -3rem;
+    animation: topleft 1.2s infinite alternate;
+}
+.animation img:nth-child(2){
+    top: 13rem;
+    left: 28rem;
+    z-index: 1;
+    animation: topleft 1.3s infinite alternate;
+}
+.animation img:nth-child(3){
+    animation: topleft 3s infinite alternate;
+}
+
+.animation img:nth-child(4){
+    top: 27rem;
+    left: 13rem;
+    z-index: 1;
+    animation: topleft 1.7s infinite alternate;
+}
+
+.animation img:nth-child(5){
+    top: -4rem;
+    left: 18rem;
+    z-index: -1;
+    animation: topleft 1.5s infinite alternate;
+}
+
+.animation img:nth-child(6){
+    top: -1rem;
+    left: 2rem;
+    z-index: -1;
+    animation: topleft 1s infinite alternate;
+}
+
+@keyframes topleft {
+    from{
+        transform: translate(0, 0);
+    }
+    to{
+        transform: translate(4rem, 2rem);
+    }
+}
