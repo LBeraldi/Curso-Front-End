@@ -106,6 +106,6 @@ section p{
         transform: translate(0, 0);
     }
     to{
-        transform: translate(4rem, 2rem);
+        transform: translate(4rem, 4rem);
     }
 }

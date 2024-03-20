@@ -1,0 +1,17 @@
+body{
+    width: 50vw;
+    margin: auto;
+}
+
+.container{
+    width: 20vw;
+}
+
+.cards{
+    display: flex;
+}
+
+.card label img{
+    width: 100px;
+    height: 100px;
+}
