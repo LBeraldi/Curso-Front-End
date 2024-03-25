@@ -5,6 +5,15 @@
     <title>Title</title>
 </head>
 <body>
+<script !src="">
+    let pessoa = {}
+    pessoa.nome = prompt('Digite um nome:')
+    pessoa.email = prompt('Digite o email:')
 
+    for (let props in pessoa) {
+        document.write(props," ",  pessoa[props], "<br>")
+    }
+
+</script>
 </body>
 </html>
