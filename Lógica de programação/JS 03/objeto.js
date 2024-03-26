@@ -20,6 +20,8 @@ console.log(`${pessoa.nome} mora em ${pessoa.endereco.rua} no numero ${pessoa.en
 for (let props in pessoa) {
     console.log(props, pessoa[props])
 }
+*/
+
 
 //  MOSTRE O CONSUMO DE GASOLINA -------------------------------------------
 /*
@@ -36,7 +38,7 @@ carro.marca = 'FIAT'
 let aux = carro.km / carro.litrosConsumidos
 
 console.log(`O carro ${carro.modelo} da marca ${carro.marca} fez em média ${aux} Km/l de ${carro.combustivel}`)
-
+*/
 
 
 // EXEMPLO DE USO DE OBJETO -------------------------------------------
