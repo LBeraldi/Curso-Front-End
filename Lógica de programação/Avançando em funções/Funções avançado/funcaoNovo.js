@@ -1,4 +1,14 @@
-// HOISTING
+// FUNÇÕES AUTO-INVOCAVEIS / IIFE ----------------------
+(function (){
+    let isValid = false
+    consle.log('menu', isValid)
+    function init(){
+        console.log('init')
+    }
+    init()
+})
+
+// HOISTING ----------------------
 const teste = function teste() {
     console.log('teste')
 }
